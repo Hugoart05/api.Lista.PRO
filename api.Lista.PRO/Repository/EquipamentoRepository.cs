@@ -15,7 +15,7 @@ namespace api.Lista.PRO.Repository
 
         }
 
-        public async Task<List<Equipamento>> PorStringValue(string nome)
+        public async Task<List<Equipamento>>ByStringName(string nome)
         {
             var equipamentosStringValue = await _contextData
                 .Equipamentos
