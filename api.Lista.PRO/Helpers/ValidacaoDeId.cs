@@ -14,8 +14,6 @@ namespace api.Lista.PRO.Helpers
             _conn = conn;
         }
 
-        
-
         public bool ValidarCondominio(int id)
         {
             var idValidado = _conn.Condominios.FirstOrDefault(c => c.Id == id);
