@@ -36,7 +36,6 @@ namespace api.Lista.PRO.Repository
                 Console.WriteLine($"Erro ao criar condomínio:{ex.Message}");
                 throw;
             }
-
             return false;
         }
         public Condominio DadosDoCondominio(int id)
@@ -47,9 +46,6 @@ namespace api.Lista.PRO.Repository
                 .Include(x => x.Equipamentos)
                 .Include(x => x.ManutencoesPreventivas)
                 .FirstOrDefault();
-                
-                
-
             return condominioCompleto;
         }
     }
